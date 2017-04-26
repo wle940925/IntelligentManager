@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+    <com.example.intelligentmanager.finance.View.widget.riseNum.RoundImageView
+        android:id="@+id/communcity_item_header"
+        android:layout_width="50dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:id="@+id/communcity_item_name"
+            android:textColor="#7888a9"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/communcity_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#404040"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="10dip"
+                    android:text="昨天"
+                    android:id="@+id/communcity_item_time"
+                    android:textColor="@color/gray"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:id="@+id/communcity_item_praise"
+                    android:clickable="true"
+                    android:background="@drawable/ic_thank"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_good_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_marginRight="32dip"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_good_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <ImageView
+                        android:id="@+id/good_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/comment_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/good_img"
+                        android:scaleType="fitXY"
+                     />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="10dip"
+            android:background="#e6e6e6" >
+
+            <ImageView
+                android:id="@+id/iv_share_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_share_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/iv_share_heart"
+                android:textColor="#7888a9"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+
+    </LinearLayout>
+
+</LinearLayout>

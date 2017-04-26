@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑消息"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/send_content"
+        android:hint="请编辑消息推送"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="text"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="280dp">
+        <Button
+            android:text="退出"
+            android:textSize="18dp"
+            android:id="@+id/sys_exit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_c7"
+            android:background="@color/color_line_c3"/>
+
+        <Button
+            android:text="发布"
+            android:textSize="18dp"
+            android:id="@+id/send_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white"
+            android:background="@color/red"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

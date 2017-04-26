@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_alipay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layout_loginAlipay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_marginLeft="15dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/back"
+            android:background="#FAFAFA"
+            android:id="@+id/ib_alipayBack"
+            android:layout_weight="0.08" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/alipay"
+            android:id="@+id/iv_loginAlipay"
+            android:layout_marginLeft="55dp"/>
+        <TextView
+            android:text="登录支付宝"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt_loginApply" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_aliply_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_loginAlipay1"
+        android:background="@color/color_btn_normal_cbn2"
+        android:layout_marginTop="8dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_loginAlipay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_aliply_one"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入支付宝账号"
+            android:ems="10"
+            android:id="@+id/edt_alipayAccout" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:id="@+id/edt_alipayPwd" />
+
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:text="自动登录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_autoLoginAlipay" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layout_loginAlipay2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_syncAlipay"
+            android:text="开通同步"
+            android:textSize="18dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

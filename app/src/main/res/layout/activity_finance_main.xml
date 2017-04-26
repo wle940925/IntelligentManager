@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_finance_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/finance_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <Button
+            android:text="私密账单"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:id="@+id/secret_bill"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/bg_detail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/bg_detail"
+        android:layout_below="@+id/finance_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg_detail"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_finance_bill"
+            style="@style/btn_normal_style"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.30"
+            android:text="@string/finance_bill"/>
+
+        <Button
+            android:id="@+id/btn_finance_record"
+            style="@style/btn_normal_style"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.30"
+            android:text="@string/finance_record"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_detail_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linearlayout_btn_group"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_btn_normal_cbn2"
+        />
+
+    <LinearLayout
+        android:id="@+id/finance_auto_alipay"
+        style="@style/finance_auto_style"
+        android:layout_height="60dp"
+        android:layout_below="@id/divider_detail_one"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/alipay"/>
+
+        <TextView
+            style="@style/text_detail_style"
+            android:layout_width="239dp"
+            android:text="@string/finance_alipay_text"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_alipay_add"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:background="@color/color_line_c3"
+                android:text="@string/finance_autoadd_text"
+                android:textColor="@color/color_text_c7"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider_detail_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/finance_auto_alipay"
+        android:background="@color/color_btn_normal_cbn2"
+        />
+
+    <LinearLayout
+        android:id="@+id/finance_auto_wechat"
+        style="@style/finance_auto_style"
+        android:layout_height="60dp"
+        android:layout_below="@id/divider_detail_two"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/wechat"
+            />
+
+        <TextView
+            style="@style/text_detail_style"
+            android:text="@string/finance_wechat_text"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_wechat_add"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:background="@color/color_line_c3"
+                android:text="@string/finance_autoadd_text"
+                android:textColor="@color/color_text_c7"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_detail_three"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/finance_auto_wechat"
+        android:background="@color/color_btn_normal_cbn2"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/finance_auto_creditcard"
+        style="@style/finance_auto_style"
+        android:layout_height="60dp"
+        android:layout_below="@id/divider_detail_three"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/creditcard"
+            />
+
+        <TextView
+            style="@style/text_detail_style"
+            android:text="@string/finance_creditcard_text"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_creditcard_add"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:background="@color/color_line_c3"
+                android:text="@string/finance_autoadd_text"
+                android:textColor="@color/color_text_c7"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_detail_four"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/finance_auto_creditcard"
+        android:background="@color/color_btn_normal_cbn2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayout_btn_group"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/monthly__income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/finance_monthly_income"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/finance_monthly_income_text"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_line_cl4"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/monthly_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/finance_monthly_income"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/finance_monthly_expense_text"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_line_cl4"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/text_detail_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/finance_monthly_balance"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/finance_monthly_balance_text"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

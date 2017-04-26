@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorhui">#BFBFBF</color>
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#808080</color>
+    <color name="colorPrimary">#2C3EE7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_line_c1">#ffaaaaaa</color>
+    <color name="color_line_c2">#ffe4e4e4</color>
+    <color name="color_line_c3">#ffdfdfdf</color>
+    <color name="main_color">#db0f0c</color>
+    <color name="red">#ff0000</color>
+    <color name="homepage_bg">#D6D7D7</color>
+
+
+    <color name="black">#000000</color>
+
+    <color name="color_btn_normal_cbn2">#ffaaaaaa</color>
+    <color name="green">#15B118</color>
+    <color name="pure_white">#fcfbfb</color>
+    <color name="gray_save">#f0f0f0</color>
+
+    <!-- 标题栏返回按钮的背景颜色 -->
+    <drawable name="button_backward_pressed">#ffdb8100</drawable>
+    <drawable name="button_backward_normal">#00000000</drawable>
+
+    <!-- 程序主色调 -->
+    <color name="background">#f2f2f2</color>
+    <color name="table_background">#cbcbcb</color>
+    <color name="light_white">#fcfcfc</color>
+    <color name="bg_top_bar">#fbcd45</color>
+    <color name="main_bg">#f5f5f5</color>
+    <color name="btn_color_main_bg_normal">#fff78b00</color>
+    <color name="btn_color_main_bg_pressed">#ffdb8100</color>
+    <color name="main_bottom_text_bg_color">#767e89</color>
+    <color name="color_line_cl4">#ffe4e4e4</color>
+    <color name="color_line_cl5">#ffdfdfdf</color>
+    <color name="color_text_c10">#fff78b00</color>
+    <color name="color_text_c11">#ff1c865f</color>
+    <color name="color_text_c12">#ffb24537</color>
+    <color name="color_text_c13">#ff9b4421</color>
+    <color name="color_text_c14">#ff73580a</color>
+    <color name="color_text_c15">#fffff8e2</color>
+    <color name="color_text_c5">#73394042</color>
+    <color name="color_text_c6">#ff767e89</color>
+    <color name="transparent">#00000000</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_orange_dark">#FF5A00</color>
+    <color name="color_text_c6_a20">#33767e89</color>
+    <color name="color_text_c7">#ff394042</color>
+    <color name="bg_top">#fbcd45</color>
+    <color name="actionbar_text_default">#ffaa4725</color>
+    <color name="actionbar_text_pressed">#405e2807</color>
+    <color name="menu_panel_divider">#99827364</color>
+    <color name="common_sub_item_bg_normal">#fff5f5f5</color>
+    <color name="nav_text_normal">#5c5e61</color>
+    <color name="nav_text_pressed">#DA4A3A</color>
+    <color name="bg_select_date">#f8f8f8</color>
+    <color name="bg_homepage_btn">#FAFAFA</color>
+
+</resources>

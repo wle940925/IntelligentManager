@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">智慧小管家</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="back">返回</string>
+    <string name="select_head">选择头像</string>
+   <string name="password">密码</string>
+    <string name="pickdate">请选择日期</string>
+    <string name="picktime">请选择时间</string>
+    <!--schedule-->
+    <string name="title">标题</string>
+    <string name="start">开始</string>
+    <string name="end">结束</string>
+    <string name="content">内容</string>
+    <string name="remins_way">提醒方式:</string>
+    <!--login_layout-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="auto_login">自动登录</string>
+    <!--homepage_fragment-->
+    <string name="sports">健身</string>
+    <string name="accounting">财务</string>
+    <string name="shedule">日程</string>
+    <string name="circle">圈子</string>
+
+    <!--fragment_personnal_info-->
+    <string name="head">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="accounts">账号</string>
+    <string name="gender">性别</string>
+    <string name="signal">个性签名</string>
+    <string name="save_change">保存修改</string>
+    <!--activity_finance_main-->
+    <string name="finance_record">记一笔</string>
+    <string name="finance_bill">账单</string>
+    <string name="finance_alipay_text">支付宝</string>
+    <string name="finance_wechat_text">微信钱包</string>
+    <string name="finance_creditcard_text">银行卡</string>
+    <string name="finance_autoadd_text">添加</string>
+    <string name="finance_monthly_income">0.00</string>
+    <string name="finance_monthly_income_text">本月收入</string>
+    <string name="finance_monthly_expense">0.00</string>
+    <string name="finance_monthly_expense_text">本月支出</string>
+    <string name="finance_monthly_balance">0.00</string>
+    <string name="finance_monthly_balance_text">本月余额</string>
+
+    <!--fragment-->
+    <string name="fragment_record_expense">支出</string>
+    <string name="fragment_record_income">收入</string>
+    <string name="fragment_record_back">返回</string>
+    <string name="fragment_record_save">保存</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="internet_failed">请检查网络连接</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+
+</resources>
